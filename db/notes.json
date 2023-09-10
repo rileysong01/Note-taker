@@ -1,16 +1,7 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
-        "title": "Do homework",
-        "text": "Do homework???",
-        "id": "359848dd-844d-4f9d-b7fe-d6ab2074826a"
-    },
-    {
-        "title": "Eat dinner",
-        "text": "Eat dinner at 9 pm",
-        "id": "6cbae44f-4bfa-46e8-a967-0c2fffe294f2"
+        "title": "Assignment",
+        "text": "Finish assignment",
+        "id": "c14ed279-17ed-4514-96ea-38f566364e63"
     }
 ]

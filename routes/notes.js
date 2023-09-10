@@ -12,7 +12,6 @@ notes.get('/', (req, res) => readFromFile('db/notes.json').then((data) => res.js
 
 // post new tip
 notes.post('/', (req, res) => {
-    console.log(req.body);
 
     const { title, text } = req.body;
 
@@ -23,6 +22,7 @@ notes.post('/', (req, res) => {
             id: uuidv4()
         }
         readAndAppend(newNote, 'db/notes.json')
+        res.json('note posted')
     } else {
         res.status(500).json({ error: 'Error in adding tip' });
     }
