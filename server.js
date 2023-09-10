@@ -15,13 +15,13 @@ app.use('/api', api);
 app.use(express.static('public'));
 
 // get route for landing page
-app.get('/', (req, res) => res.sendFile(path.join(dirname, '/public/html/index.html')))
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/html/index.html')))
 
 // get route for notes page
-app.get('/notes', (req, res) => res.sendFile(path.join(dirname, '/public/html/notes.html')))
+app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, '/public/html/notes.html')))
 
 // wildcard route
-app.get('*', (req, res) => res.sendFile(path.join(dirname, '/public/html/404.html')))
+app.get('*', (req, res) => res.sendFile(path.join(__dirname, '/public/html/404.html')))
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
