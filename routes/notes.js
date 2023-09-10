@@ -8,7 +8,7 @@ const {
 } = require('../helpers/fsUtils');
 
 // get all existing tips
-notes.get('/', (req, res) => readFromFile('./db/tips.json').then((data) => res.json(JSON.parse(data))));
+notes.get('/', (req, res) => readFromFile('db/notes.json').then((data) => res.json(JSON.parse(data))));
 
 // post new tip
 notes.post('/', (req, res) => {
@@ -22,7 +22,7 @@ notes.post('/', (req, res) => {
             text,
             tip_id: uuidv4()
         }
-        readAndAppend(newNote, './db/db.json')
+        readAndAppend(newNote, 'db/notes.json')
     } else {
         res.status(500).json({ error: 'Error in adding tip' });
     }
