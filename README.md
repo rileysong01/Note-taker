@@ -23,6 +23,9 @@
 
   ## Usage
   To use this Note Taker, please use the following link for the deployed application. 
+  https://pacific-bayou-90667-492ff037dadb.herokuapp.com/
+    ![screenshot of landing page](assets/landingpage.png)
+    ![screenshot of landing page](assets/notespage.png)
   
   ## Credits
   N/A 
